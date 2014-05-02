@@ -8,8 +8,10 @@ source 'https://rails-assets.org'
 gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
-# gem 'pg' # for heroku
+
+# for heroku
 gem 'pg', group: :production
+gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
